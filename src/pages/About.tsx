@@ -14,24 +14,25 @@ export default function About() {
   const experienceRef = useRef<HTMLDivElement>(null);
   
   // Team/individual values
-  const values = [
-    {
-      title: "Quality",
-      description: "Striving for excellence in every project, no matter how big or small."
-    },
-    {
-      title: "Innovation",
-      description: "Constantly exploring new ideas and approaches to solve complex problems."
-    },
-    {
-      title: "Collaboration",
-      description: "Working closely with clients to ensure their vision comes to life."
-    },
-    {
-      title: "Integrity",
-      description: "Building relationships based on trust, honesty, and transparency."
-    }
-  ];
+const values = [
+  {
+    title: "Fire Prevention",
+    description: "Designing comprehensive fire prevention systems and conducting hazard assessments"
+  },
+  {
+    title: "Quality",
+    description: "Delivering excellence in every project with strict adherence to safety standards"
+  },
+  {
+    title: "Customer Safety",
+    description: "Ensuring our clients achieve the highest levels of fire safety and protection"
+  },
+  {
+    title: "Reliability",
+    description: "Building solutions that protect lives and property in emergency situations"
+  }
+];
+
 
   // Experience timeline
   const experiences = [
@@ -99,7 +100,7 @@ export default function About() {
             >
               <div className="aspect-square rounded-3xl overflow-hidden shadow-lg glow-gradient">
                 <img 
-                  src="https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
+                  src="/images/testingapp.png" 
                   alt="About Us" 
                   className="w-full h-full object-cover"
                 />
@@ -110,7 +111,7 @@ export default function About() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <p className="text-5xl font-bold text-red-yellow-gradient">7+</p>
+                <p className="text-5xl font-bold text-red-yellow-gradient">20+</p>
                 <p className="text-gray-600">Years of Experience</p>
               </motion.div>
             </motion.div>
@@ -124,10 +125,10 @@ export default function About() {
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-red-yellow-gradient text-glow crossfire-header">About CrossFire</h1>
               <p className="text-gray-600 mb-6">
-                I'm Jane Doe, a passionate designer and developer with over 7 years of experience creating digital products, brands, and experiences that people love.
+               Established in 2000, CROSSFIRE is a multidisciplinary fire safety consultancy and service provider based in Hyderabad. Our team of experienced professionals combines technical expertise with practical knowledge to deliver reliable fire protection systems that adhere to the highest safety standards.
               </p>
               <p className="text-gray-600 mb-8">
-                My journey began with a deep curiosity for how things work and a desire to create solutions that make people's lives better. Today, I collaborate with forward-thinking clients to bring their visions to life through thoughtful design and clean code.
+                We follow Indian and international fire safety codes such as BIS Standards, NBC of India, and Local Fire Department Regulations to ensure comprehensive protection for all types of buildings and facilities.
               </p>
               
               <Link to="/contact">
@@ -156,10 +157,7 @@ export default function About() {
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold mb-6 crossfire-border pb-3">Mission</h2>
                 <p className="text-gray-600 mb-6">
-                  To create meaningful digital experiences that connect people with brands and solve real-world problems through innovative design and technology.
-                </p>
-                <p className="text-gray-600">
-                  I believe that great design should be accessible to everyone and that technology should enhance our lives, not complicate them.
+                  Our mission is to provide multidisciplinary fire safety solutions through technical expertise, practical implementation, and adherence to national and international standards. We are committed to excellence, integrity, and building long-term trust by delivering every project with quality, compliance, and zero conflict.
                 </p>
               </div>
             </motion.div>
@@ -178,11 +176,9 @@ export default function About() {
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold mb-6 crossfire-border pb-3">Vision</h2>
                 <p className="text-gray-600 mb-6">
-                  To become a trusted partner for businesses seeking to elevate their digital presence and create meaningful connections with their audience.
+                  To be the most trusted and respected fire safety partner in India, delivering innovative, compliant, and reliable protection systems that safeguard lives and property across all sectors.
                 </p>
-                <p className="text-gray-600">
-                  I envision a world where technology and design work together seamlessly to create solutions that are both beautiful and functional.
-                </p>
+
               </div>
             </motion.div>
           </div>

@@ -1,7 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Mail, Phone, Code, Paintbrush, Layout, Globe, Flame } from "lucide-react";
+import { ArrowRight, Mail, Phone, Code, Paintbrush, Layout, Globe,  School,
+  Hospital,
+  Utensils,
+  Home as HomeIcon,
+  Building2,
+  Zap,
+  Factory, Flame } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -30,27 +36,42 @@ export default function Home() {
 
   // Services
   const services = [
-    {
-      title: "UX & UI",
-      icon: <Layout className="h-6 w-6" />,
-      description: "Creating intuitive and engaging user experiences through thoughtful design."
-    },
-    {
-      title: "Web & Mobile App",
-      icon: <Globe className="h-6 w-6" />,
-      description: "Building responsive websites and powerful mobile applications."
-    },
-    {
-      title: "Design & Creative",
-      icon: <Paintbrush className="h-6 w-6" />,
-      description: "Crafting visual identities and creative assets that captivate audiences."
-    },
-    {
-      title: "Development",
-      icon: <Code className="h-6 w-6" />,
-      description: "Writing clean, efficient code to bring designs and ideas to life."
-    }
-  ];
+  {
+    title: "Educational Buildings",
+    icon: <School className="h-6 w-6" />,
+    description: "Fire alarms, evacuation plans, and drills for schools and colleges."
+  },
+  {
+    title: "Hospitals",
+    icon: <Hospital className="h-6 w-6" />,
+    description: "Smoke detection and fire systems designed for healthcare safety."
+  },
+  {
+    title: "Hotels/Restaurants",
+    icon: <Utensils className="h-6 w-6" />,
+    description: "Sprinklers and alarms for guest and kitchen fire safety."
+  },
+  {
+    title: "Residential Buildings",
+    icon: <HomeIcon className="h-6 w-6" />,
+    description: "Home fire protection with hydrants, alarms, and extinguishers."
+  },
+  {
+    title: "Commercial Buildings",
+    icon: <Building2 className="h-6 w-6" />,
+    description: "Integrated safety systems for offices and malls."
+  },
+  {
+    title: "Power Plants",
+    icon: <Zap className="h-6 w-6" />,
+    description: "High-grade systems for fire control in critical areas."
+  },
+  {
+    title: "Factories",
+    icon: <Factory className="h-6 w-6" />,
+    description: "Industrial fire protection with detectors and extinguishers."
+  }
+];
 
   // Stats
   const stats = [
@@ -188,7 +209,8 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
             >
-              WEB PRODUCTION AGENCY
+              Your Trusted
+Fire Safety Partner
             </motion.h2>
             
             <motion.p
@@ -197,7 +219,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              Unlock your digital potential with CrossFire web production agency. We offer innovative solutions in web development, digital marketing, and creative design to elevate your online presence and drive measurable results.
+              Fire Protection Engineers & Consultants - Providing comprehensive fire safety solutions since 2000
             </motion.p>
             
             {/* CTA Buttons */}
@@ -246,10 +268,10 @@ export default function Home() {
             >
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-red-yellow-gradient text-glow crossfire-header crossfire-border pb-3">ABOUT</h2>
               <p className="text-gray-600 mb-6">
-                CrossFire is a forward-thinking web development company dedicated to transforming your digital vision into reality. With a focus on creativity and innovation, we specialize in creating beautiful, effective websites.
+               We are a multidisciplinary fire safety consultancy and service provider offering comprehensive solutions that help businesses and institutions maintain the highest levels of fire safety. Our team combines technical expertise with practical knowledge to deliver reliable fire protection systems.
               </p>
               <p className="text-gray-600 mb-8">
-                Whether you're a startup or an established business, we're here to elevate your online presence and help you succeed in the digital world.
+                With a perfect track record of completed projects and no confrontations or litigation to date, we have built a reputation for reliability, quality, and exceptional service in the fire safety industry.
               </p>
               <Link to="/about">
                 <Button variant="outline" className="rounded-full border-2 border-primary-600 gap-2">
@@ -299,7 +321,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            OUR SERVICES
+            TO WHOM DO WE CATER
           </motion.h2>
           <motion.p 
             className="text-center text-lg text-gray-600 mb-16 max-w-2xl mx-auto"
@@ -308,7 +330,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Explore our array of services, from web development to e-commerce solutions, designed to elevate your online presence and place success in reach.
+            Explore our range of fire safety solutions, from residential protection to industrial-grade systems, designed to safeguard lives and property while ensuring full compliance and peace of mind.
           </motion.p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -391,14 +413,14 @@ export default function Home() {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 crossfire-header">
-              <span className="text-red-yellow-gradient text-glow">SPECIAL OFFER</span>
-              <br />FOR<br />
-              <span className="text-red-yellow-gradient text-glow">NEW CLIENTS</span>
+              <span className="text-red-yellow-gradient text-glow">WANT TO</span>
+              <br />KNOW<br />
+              <span className="text-red-yellow-gradient text-glow">MORE ABOUT US</span>
             </h2>
             <p className="text-gray-600 max-w-xl mx-auto mb-10">
-              We're excited to offer a special discount on our comprehensive e-commerce website packages. Elevate your online store with our expert solutions tailored to boost your business's digital presence.
+             With over two decades of expertise, CROSSFIRE has earned a trusted name in fire safety. From technical consultancy to end-to-end protection systems, we ensure compliance with national and international standards—delivering safety without compromise.
             </p>
-            <Link to="/contact">
+            <Link to="/about">
               <Button className="rounded-full px-8 gap-2 red-yellow-gradient border-0 glow-gradient">
                 Learn More <ArrowRight className="h-4 w-4" />
               </Button>
