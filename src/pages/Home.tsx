@@ -26,13 +26,19 @@ export default function Home() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   
   // Example brands/clients
-  const brands = [
-    { name: "Google", logo: "G" },
-    { name: "Microsoft", logo: "M" },
-    { name: "Amazon", logo: "A" },
-    { name: "Adobe", logo: "Ad" },
-    { name: "Dribbble", logo: "Db" }
-  ];
+const brands = [
+  { name: "D. E. Shaw & Co.", logo: "DS" },
+  { name: "University of Hyderabad", logo: "UH" },
+  { name: "Amrutha Castle", logo: "AC" },
+  { name: "DigitalPro", logo: "DP" },
+  { name: "NextGen Hotel Grand Plaza", logo: "NG" },
+  { name: "SARATH City Capital", logo: "SC" },
+  { name: "Shreya Hospital", logo: "SH" },
+  { name: "Mohini Restaurant", logo: "MR" },
+  { name: "Regency Towers", logo: "RT" },
+  { name: "MESCO Educational Complex", logo: "ME" }
+];
+
 
   // Services
   const services = [
