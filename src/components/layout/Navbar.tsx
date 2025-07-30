@@ -119,7 +119,7 @@ export default function Navbar() {
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
-            <div className="container mx-auto px-4 py-6 pt-24">
+            <div className="container mx-auto px-4 py-6 pt-24 bg-white">
               <nav className="flex flex-col gap-6">
                 {navItems.map((item, index) => (
                   <motion.div
@@ -132,7 +132,7 @@ export default function Navbar() {
                       to={item.path}
                       className={({ isActive }) =>
                         cn(
-                          "text-xl font-medium transition-colors hover:text-primary-600 block py-2",
+                          "px-4 bg-white rounded-full text-xl font-medium transition-colors hover:text-primary-600 block py-2",
                           isActive ? "text-primary-600" : "text-gray-700"
                         )
                       }
