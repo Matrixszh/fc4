@@ -20,7 +20,7 @@ export default function Footer() {
               <span className="text-xl font-bold">Portfolio</span>
             </Link>
             <p className="text-gray-600 mb-6 max-w-md">
-              Building digital products, brands, and experiences that people love.
+              Building products and experiences that people love.
             </p>
             <div className="flex gap-4">
               <motion.a
@@ -109,7 +109,7 @@ export default function Footer() {
           transition={{ delay: 0.5 }}
           viewport={{ once: true }}
         >
-          <p>© {new Date().getFullYear()} Portfolio. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} CrossFire. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>

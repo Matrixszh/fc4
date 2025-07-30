@@ -35,26 +35,40 @@ const values = [
 
 
   // Experience timeline
-  const experiences = [
-    {
-      year: "2020-Present",
-      position: "Freelance Designer & Developer",
-      company: "Self-employed",
-      description: "Working with various clients across industries to create digital products."
-    },
-    {
-      year: "2017-2020",
-      position: "Senior UI/UX Designer",
-      company: "Design Agency",
-      description: "Led design teams on projects for major brands and startups."
-    },
-    {
-      year: "2015-2017",
-      position: "Web Developer",
-      company: "Tech Solutions Inc.",
-      description: "Developed responsive websites and web applications for clients."
-    }
-  ];
+const experiences = [
+  {
+    year: "30 years",
+    position: "Chief",
+    company: "Aftab Ahmed",
+    description: "Qualification: B.E. Civil"
+  },
+  {
+    year: "4 years",
+    position: "Design Engineer",
+    company: "Apoorva Srivastava",
+    description: "Qualification: B.E. Fire & Safety"
+  },
+  {
+    year: "",
+    position: "Project Manager",
+    company: "Shiraz Shaikh",
+    description: "Qualification: M.Tech(Mech), CWI(UK)"
+  },
+  {
+    year: "4 years",
+    position: "Project Engineer",
+    company: "Kushal Chary Cingaram",
+    description: "Qualification: M.Tech(Mech)"
+  },
+  {
+    year: "12 years",
+    position: "Panel Engineer",
+    company: "Radha Krishna",
+    description: "Qualification: B.Tech. Electrical"
+  }
+];
+
+
   
   // GSAP animations
   useEffect(() => {
@@ -236,9 +250,9 @@ const values = [
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-red-yellow-gradient text-glow crossfire-header">Experience</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-red-yellow-gradient text-glow crossfire-header">Our Team</h2>
             <p className="text-gray-600 text-center max-w-2xl mx-auto mb-16">
-              A journey of growth, innovation, and impactful digital solutions.
+Meet the dedicated professionals behind CROSSFIRE, committed to delivering fire safety with expertise, precision, and trust.
             </p>
           </motion.div>
           
@@ -272,7 +286,7 @@ const values = [
           >
             <Link to="/contact">
               <Button className="rounded-full px-8 gap-2 red-yellow-gradient border-0 glow-gradient">
-                Work with me <ArrowRight className="h-4 w-4" />
+                Work with us <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
           </motion.div>

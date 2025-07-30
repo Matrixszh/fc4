@@ -75,8 +75,8 @@ export default function Home() {
 
   // Stats
   const stats = [
-    { number: "100+", label: "Projects" },
-    { number: "32", label: "Partners" },
+    { number: "20+", label: "Yrs Of Experience" },
+    { number: "30+", label: "Projects" },
     { number: "3", label: "Offices" }
   ];
   

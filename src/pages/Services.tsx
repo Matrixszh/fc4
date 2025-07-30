@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Code, Paintbrush, Layout, Globe, Layers, Camera, Smartphone, ArrowRight } from "lucide-react";
+import { Code, Paintbrush, Layout, Globe, Layers, Camera, Smartphone, ArrowRight, AreaChart, Sparkles, FlameKindling, Shield, AlarmSmoke, ShieldCheck, FireExtinguisher } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -39,51 +39,74 @@ export default function Services() {
   
   // Main services
   const mainServices = [
-    {
-      title: "UX & UI",
-      icon: <Layout className="h-8 w-8" />,
-      description: "Creating intuitive and engaging user experiences through thoughtful design.",
-      features: ["User Research", "Wireframing", "Prototyping", "Usability Testing"]
-    },
-    {
-      title: "Web & Mobile App",
-      icon: <Globe className="h-8 w-8" />,
-      description: "Building responsive websites and powerful mobile applications.",
-      features: ["Responsive Design", "Cross-platform Development", "Progressive Web Apps", "E-commerce Solutions"]
-    },
-    {
-      title: "Design & Creative",
-      icon: <Paintbrush className="h-8 w-8" />,
-      description: "Crafting visual identities and creative assets that captivate audiences.",
-      features: ["Brand Identity", "Illustration", "Motion Graphics", "Print Design"]
-    },
-    {
-      title: "Development",
-      icon: <Code className="h-8 w-8" />,
-      description: "Writing clean, efficient code to bring designs and ideas to life.",
-      features: ["Frontend Development", "Backend Systems", "CMS Integration", "Performance Optimization"]
-    }
-  ];
+  {
+    title: "Consulting Services",
+    icon: <Shield className="h-8 w-8 text-white" />,
+    description: "Expert fire safety consulting for all types of buildings and facilities",
+    features: [
+      "Fire Prevention Designs",
+      "Fire Hazard Assessment Reports",
+      "Planning, Estimating, Commissioning",
+      "Fire Escape Plans",
+      "Evacuation Drills"
+    ]
+  },
+  {
+    title: "Fire Hydrant Systems",
+    icon: <FlameKindling className="h-8 w-8 text-white" />,
+    description: "Complete installation and maintenance of fire hydrant systems",
+    features: [
+      "Hydrant Valves",
+      "Hose Boxes",
+      "Hose Pipes",
+      "Branch Pipes",
+      "Regular Maintenance"
+    ]
+  },
+  {
+    title: "Automatic Sprinkler Systems",
+    icon: <Sparkles className="h-8 w-8 text-white" />,
+    description: "Effective sprinkler systems for automatic fire suppression",
+    features: [
+      "Design & Installation",
+      "Various Types of Sprinklers",
+      "Control Valve Assemblies",
+      "Maintenance & Testing",
+      "Code Compliance"
+    ]
+  },
+  {
+    title: "Fire Detection Systems",
+    icon: <AreaChart className="h-8 w-8 text-white" />,
+    description: "Advanced fire detection systems for early warning",
+    features: [
+      "Smoke & Heat Detectors",
+      "Manual Call Points",
+      "Hooters & Alarm Panels",
+      "Addressable Fire Alarm Panels",
+      "System Integration"
+    ]
+  }
+];
 
   // Additional services
-  const additionalServices = [
-    {
-      title: "Digital Strategy",
-      icon: <Layers className="h-6 w-6" />,
-      description: "Strategic planning and roadmapping for digital products and services."
-    },
-    {
-      title: "Content Creation",
-      icon: <Camera className="h-6 w-6" />,
-      description: "Professional photography, videography, and copywriting services."
-    },
-    {
-      title: "App Development",
-      icon: <Smartphone className="h-6 w-6" />,
-      description: "Native and cross-platform mobile application development."
-    }
-  ];
-
+const additionalServices = [
+  {
+    title: "Fire Fighting Equipment",
+    icon: <FireExtinguisher className="h-6 w-6 text-white" />,
+    description: "Hydrant valves, hose reels, and fire pumps for active fire suppression."
+  },
+  {
+    title: "Detection Systems",
+    icon: <AlarmSmoke className="h-6 w-6 text-white" />,
+    description: "Advanced smoke detectors, hooters, and alarm panels for early warning."
+  },
+  {
+    title: "Safety Equipment",
+    icon: <ShieldCheck className="h-6 w-6 text-white" />,
+    description: "Extinguishers, signage, doors, and escape plans for emergency readiness."
+  }
+];
   return (
     <>
       {/* Hero Section */}
@@ -107,7 +130,7 @@ export default function Services() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Comprehensive design and development solutions to help your business thrive in the digital landscape.
+            Explore our comprehensive range of fire safety services, including system design, installation, inspection, and compliance—ensuring complete protection for every type of property.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -187,7 +210,7 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Additional Services
+            Our Products
           </motion.h2>
           <motion.p
             className="text-center text-gray-600 mb-16 max-w-2xl mx-auto"
@@ -196,7 +219,7 @@ export default function Services() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Complementary offerings to enhance your digital presence and marketing efforts
+            Discover our high-quality fire safety products, from alarms and extinguishers to advanced detection systems—engineered to meet the highest standards of safety and performance.
           </motion.p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
