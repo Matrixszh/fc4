@@ -77,7 +77,7 @@ export default function Home() {
   const stats = [
     { number: "20+", label: "Yrs Of Experience" },
     { number: "30+", label: "Projects" },
-    { number: "3", label: "Offices" }
+    { number: "4", label: "Locations" }
   ];
   
   // GSAP animations

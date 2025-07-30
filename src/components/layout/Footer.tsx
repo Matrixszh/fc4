@@ -91,12 +91,12 @@ export default function Footer() {
               transition={{ delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <li>hello@portfolio.com</li>
-              <li>+1 (555) 123-4567</li>
+              <li>cfchyd@gamil.com</li>
+              <li>9246199077</li>
               <li>
-                123 Design Street
+                8-1-400/48
                 <br />
-                Creative City, 10001
+                Deluxe Colony, Tolichowki, Hyderabad
               </li>
             </motion.ul>
           </div>

@@ -105,8 +105,8 @@ export default function Contact() {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Location</h3>
                     <p className="text-gray-600">
-                      123 Design Street<br />
-                      Creative City, 10001
+                      8-1-400/48<br />
+                      Deluxe Colony, Tolichowki, Hyderabad
                     </p>
                   </div>
                 </motion.div>
@@ -124,7 +124,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Email</h3>
                     <a href="mailto:hello@crossfire.com" className="text-gray-600 hover:text-primary-600">
-                      hello@crossfire.com
+                      cfchyd@gamil.com
                     </a>
                   </div>
                 </motion.div>
@@ -142,7 +142,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Phone</h3>
                     <a href="tel:+15551234567" className="text-gray-600 hover:text-primary-600">
-                      +1 (555) 123-4567
+                      9246199077
                     </a>
                   </div>
                 </motion.div>
@@ -305,31 +305,6 @@ export default function Contact() {
               </div>
             </motion.div>
           </div>
-        </div>
-      </section>
-      
-      {/* Map Section */}
-      <section className="pb-16 md:pb-24">
-        <div className="container mx-auto px-4">
-          <motion.div 
-            className="rounded-3xl overflow-hidden h-[400px] glow-gradient relative"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <div className="w-full h-full bg-light-gray bg-pattern flex items-center justify-center relative overflow-hidden">
-              {/* Background decorative elements */}
-              <div className="absolute top-1/4 right-1/4 w-64 h-64 red-yellow-gradient rounded-full opacity-10 blur-3xl"></div>
-              <div className="absolute bottom-1/4 left-1/4 w-64 h-64 red-yellow-gradient rounded-full opacity-10 blur-3xl"></div>
-              
-              <div className="text-center relative z-10">
-                <MapPin className="h-12 w-12 text-primary-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold">Location Map</h3>
-                <p className="text-gray-600">123 Design Street, Creative City, 10001</p>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </section>
     </>
